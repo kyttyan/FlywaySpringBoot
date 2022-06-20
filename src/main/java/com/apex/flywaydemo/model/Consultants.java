@@ -1,5 +1,6 @@
 package com.apex.flywaydemo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,10 +14,13 @@ import lombok.Data;
 public class Consultants {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idConsultants;
+  @Column
   private String name;
+  @Column
   private String lastName;
+  @Column
   private int age;
+  @Column
   private int clientId;
 }

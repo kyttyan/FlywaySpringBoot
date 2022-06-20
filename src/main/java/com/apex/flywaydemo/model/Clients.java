@@ -14,7 +14,6 @@ import lombok.Data;
 public class Clients {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idClients;
   @Column
   private String name;
